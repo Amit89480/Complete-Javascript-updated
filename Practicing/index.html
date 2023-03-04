@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <p >Below we will populate the current Time</p>
+
+    <button onclick="Time()">try it</button>
+
+    <p id="here"></p>
+
+
+
+</body>
+<script>
+    function Time(){
+        setInterval(() => {
+            var date=new Date()
+            date.setHours(5);
+            document.getElementById("here").innerHTML=date;
+            
+        }, 1000);
+    }
+</script>
+</html>
