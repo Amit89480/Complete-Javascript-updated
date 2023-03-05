@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <span>Event listener</span>
+        <p id="myP" onmousedown="mouseDown()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis deleniti molestiae nam sapiente quis quos possimus laudantium vero, expedita consequuntur nesciunt dolores dolorem quidem beatae non illum sint commodi cumque a. Mollitia sapiente ad, vel, aliquam ullam animi sequi molestias earum obcaecati blanditiis porro. Officia sequi ducimus nisi dicta est illum deserunt, veritatis corrupti similique!</p>
+
+        <p id="myP1" onmousedown="mouseUP()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis deleniti molestiae nam sapiente quis quos possimus laudantium vero, expedita consequuntur nesciunt dolores dolorem quidem beatae non illum sint commodi cumque a. Mollitia sapiente ad, vel, aliquam ullam animi sequi molestias earum obcaecati blanditiis porro. Officia sequi ducimus nisi dicta est illum deserunt, veritatis corrupti similique!</p>
+
+        <p id="myP3" onmousedown="mouseUP()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis deleniti molestiae nam sapiente quis quos possimus laudantium vero, expedita consequuntur nesciunt dolores dolorem quidem beatae non illum sint commodi cumque a. Mollitia sapiente ad, vel, aliquam ullam animi sequi molestias earum obcaecati blanditiis porro. Officia sequi ducimus nisi dicta est illum deserunt, veritatis corrupti similique!</p>
+
+        <button id="button">Click me</button>
+    </div>
+    
+</body>
+<script>
+
+function mouseDown(){
+    document.getElementById('myP').style.background='red'
+}
+
+
+function mouseUP(){
+    document.getElementById('myP1').style.color='yellow'
+}
+
+
+
+
+
+const HandleClick1=document.getElementById('myP3');
+HandleClick1.addEventListener('mouseenter',()=>{
+    console.log("mouse enter")
+    HandleClick1.style.color='yellow';
+})
+
+const HandleClick2=document.getElementById('myP3');
+HandleClick2.addEventListener('mouseleave',()=>{
+    console.log("mouse leave")
+    HandleClick1.style.color='red';
+})
+</script>
+</html>
