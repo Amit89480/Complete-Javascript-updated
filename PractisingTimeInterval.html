@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="run"></p>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+
+   
+</body>
+<script>
+    const startref=document.getElementById('start')
+    const stopref=document.getElementById('stop');
+
+
+    const runningData=document.getElementById('run');
+
+let num=0;
+    const showMyNum=()=>{
+        runningData.innerHTML=`Loading....`;
+         clearRef=setInterval(()=>{
+            runningData.innerHTML=`${num}`;
+            num++;
+        },1000);
+
+
+
+
+
+
+    }
+
+    startref.addEventListener('click',showMyNum);
+
+   stopref.addEventListener('click',()=>{
+    clearInterval(clearRef);
+   })
+
+
+
+</script>
+</html>
