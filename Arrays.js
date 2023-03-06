@@ -1,5 +1,5 @@
 // Creating an Array
-var myPals = new Array;//This is optional it is done automatically
+//var myPals = new Array;//This is optional it is done automatically
 // var myPals = ["AAmit", 12, "Ashis", "Misti", "Rohan"]
 
 
@@ -235,7 +235,7 @@ const indexofMonth = months.indexOf("June")
 
 // 1. MAP()
 
-const array1 = [1, 4, 9, 16, 25]
+// const array1 = [1, 4, 9, 16, 25]
 
 // let newArr = array1.map((curElement,index,arr) => {
     
