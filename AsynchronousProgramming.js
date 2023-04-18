@@ -48,7 +48,7 @@ const PI=3.142;//-->scope chain;
 
 // outerFun(5)
 
-//Same as exical scooping
+//Same as lexical scooping
 
 
 //to get in more depth
